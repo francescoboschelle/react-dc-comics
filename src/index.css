@@ -12,6 +12,28 @@ header {
   }
 }
 
+main {
+  .jumbo {
+    height: 500px;
+    background-image: url("./assets/img/jumbotron.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .display-text {
+    top: 0;
+    transform: translateY(-50%) translateX(-10%);
+  }
+
+  .row img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+  }
+}
+
 footer {
   .topics {
     position: relative;
