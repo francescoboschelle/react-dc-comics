@@ -3,8 +3,19 @@
   --color-primary: rgb(2, 130, 249);
 }
 
+header {
+  height: 150px;
+
+  a.text-primary {
+    border-bottom: solid 0.5rem;
+    border-color: var(--color-primary);
+  }
+}
+
 footer {
   .topics {
+    position: relative;
+    z-index: 1;
     background-color: var(--color-primary);
 
     .topics-container {
