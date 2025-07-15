@@ -1,0 +1,50 @@
+:root {
+  --color-darker: rgb(48, 48, 48);
+  --color-primary: rgb(2, 130, 249);
+}
+
+footer {
+  .topics {
+    background-color: var(--color-primary);
+
+    .topics-container {
+      display: flex;
+      place-items: center;
+
+      img {
+        height: 75px;
+      }
+
+      > * {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .footer-nav {
+    position: relative;
+    background-image: url("./assets/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .footer-logo {
+      position: absolute;
+      right: 15%;
+      top: 50%;
+      width: 25%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .footer-socials {
+    position: relative;
+    z-index: 1;
+    background-color: var(--color-darker);
+
+    .btn-border {
+      border: solid 3px;
+      border-color: var(--color-primary);
+    }
+  }
+}
