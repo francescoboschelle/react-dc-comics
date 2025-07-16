@@ -1,8 +1,7 @@
 import Jumbotron from "./Jumbotron.jsx";
-import comics from "../data/comics.js";
 import CardComponent from "./CardComponent.jsx";
 
-export default function Main() {
+export default function Main({ data }) {
   return (
     <>
       <main>
@@ -13,7 +12,7 @@ export default function Main() {
               CURRENT SERIES
             </div>
             <div className="row g-4">
-              {comics.map((comic, index) => {
+              {data.map((comic, index) => {
                 return <CardComponent comic={comic} key={`comic:${index}`} />;
               })}
             </div>
