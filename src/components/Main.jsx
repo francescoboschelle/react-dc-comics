@@ -1,5 +1,6 @@
 import Jumbotron from "./Jumbotron.jsx";
 import comics from "../data/comics.js";
+import CardComponent from "./CardComponent.jsx";
 
 export default function Main() {
   return (
@@ -13,16 +14,7 @@ export default function Main() {
             </div>
             <div className="row g-4">
               {comics.map((comic, index) => {
-                return (
-                  <div className="col-2" key={`comic:${index}`}>
-                    <div className="card border-0 bg-dark text-white">
-                      <img src={comic.thumb} alt={comic.title} />
-                      <div className="card-body">
-                        <h4 className="card-title">{comic.title}</h4>
-                      </div>
-                    </div>
-                  </div>
-                );
+                return <CardComponent comic={comic} key={`comic:${index}`} />;
               })}
             </div>
             <div className="d-flex justify-content-center">
